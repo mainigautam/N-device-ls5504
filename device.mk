@@ -237,6 +237,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.msm8916 \
     libshim_camera \
     libboringssl-compat \
     Snap
