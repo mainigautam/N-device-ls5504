@@ -1,1 +1,1 @@
-add_lunch_combo rr_N939St-userdebug
+add_lunch_combo lineage_N939St-userdebug
