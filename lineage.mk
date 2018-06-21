@@ -16,8 +16,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-#include vendor/pa/main.mk
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
 
 # Inherit from N939St device
 $(call inherit-product, device/zte/N939St/device.mk)
@@ -29,7 +30,7 @@ PRODUCT_LOCALES := en_US
 BOARD_VENDOR := zte
 PRODUCT_BRAND := ZTE
 PRODUCT_DEVICE := N939St
-PRODUCT_NAME := rr_N939St
+PRODUCT_NAME := lineage_N939St
 PRODUCT_MANUFACTURER := ZTE
 PRODUCT_MODEL := Blade X9
 
